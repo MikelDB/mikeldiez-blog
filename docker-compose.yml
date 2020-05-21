@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
       context: ./
     command: gatsby develop -H 0.0.0.0
-    working_dir: /app/gatsby-starter-delog
+    working_dir: /app/blog
     user: $MY_UID:$MY_GID
     ports:
       - "8000:8000"
