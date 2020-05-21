@@ -1,4 +1,5 @@
 [build]
+  base = "gatsby-starter-delog/"
   publish = "public"
   command = "npm run build"
   
