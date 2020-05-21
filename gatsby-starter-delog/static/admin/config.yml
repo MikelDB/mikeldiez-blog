@@ -43,7 +43,7 @@ collections:
                 required: false
   - name: blog
     label: Blog
-    folder: _data/blog
+    folder: gatsby-starter-delog/_data/blog
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true
     fields:
