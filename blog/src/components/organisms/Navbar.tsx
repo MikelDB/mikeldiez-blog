@@ -4,7 +4,7 @@ type Props = {
     text: string,
 };
 
-const Test: React.FC<Props> = ({
+const Navbar: React.FC<Props> = ({
     text,
 }): React.ReactElement => {
     return (
@@ -13,4 +13,4 @@ const Test: React.FC<Props> = ({
 };
 
 
-export default Test;
+export default Navbar;

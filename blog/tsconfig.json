@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "baseUrl": "src",
+      "target": "esnext",
+      "moduleResolution": "node",
+      "allowJs": false,
+      "strict": true,
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "skipLibCheck": true,
+      "jsx": "preserve",
+      "lib": [
+        "dom",
+        "es2018"
+      ],
+    },
+    "exclude": [
+      "node_modules",
+    ],
+    "include": [
+      "custom.d.ts"
+    ]
+  }
+  
