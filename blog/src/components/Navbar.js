@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
+import stackoverflow from '../img/stackoverflow-icon.svg'
+import linkedin from '../img/linkedin-icon.svg'
 import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
@@ -85,6 +87,26 @@ const Navbar = class extends React.Component {
               >
                 <span className="icon">
                   <img src={github} alt="Github" />
+                </span>
+              </a>
+              <a
+                className="navbar-item"
+                href="https://www.linkedin.com/in/mikeldiezb/?locale=en_US"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon">
+                  <img src={linkedin} alt="Linkedin" />
+                </span>
+              </a>
+              <a
+                className="navbar-item"
+                href="https://stackoverflow.com/users/4769750/mikel-d%c3%adez-buil"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon">
+                  <img src={stackoverflow} alt="StackOverflow" />
                 </span>
               </a>
             </div>
