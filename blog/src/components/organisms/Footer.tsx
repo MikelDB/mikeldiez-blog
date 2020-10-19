@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 
 import Icon from '../atoms/Icon'; 
 
-
 import github from '../../img/github-icon.svg'
 import stackoverflow from '../../img/stackoverflow-icon.svg'
 import linkedin from '../../img/linkedin-icon.svg'
