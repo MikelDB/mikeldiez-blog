@@ -24,27 +24,8 @@ const Footer: React.FC = (): React.ReactElement => {
             </Link>
           </FooterLinks>
           <FooterLinks>
-            <Link to="/products">
-              Products
-            </Link>
-          </FooterLinks>
-          <FooterLinks>
-            <Link to="/contact/examples">
-              Form Examples
-            </Link>
-          </FooterLinks>
-          <FooterLinks>
-            <a
-              href="/admin/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Admin
-            </a>
-          </FooterLinks>
-          <FooterLinks>
             <Link to="/blog">
-              Latest Stories
+              Blog
             </Link>
           </FooterLinks>
           <FooterLinks>

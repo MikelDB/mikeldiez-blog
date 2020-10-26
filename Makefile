@@ -19,10 +19,12 @@ enter:
 	docker-compose exec blog /bin/sh
 
 up: ## Spin up the project
-	docker-compose up -d
-	docker-compose exec blog /bin/sh
+	docker-compose up
 
 down: ## Bring down the environment
 	docker-compose down
 	docker stop $(docker ps -aq)
 
+restart:
+	docker-compose down
+	docker-compose up

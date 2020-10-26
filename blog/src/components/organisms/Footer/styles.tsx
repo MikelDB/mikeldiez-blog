@@ -11,6 +11,7 @@ export const FooterContainer = Styled.footer`
 export const LinksContainer = Styled.div`
     display: flex;
     flex-wrap: wrap;
+    min-width: 600px;
 `;
 
 export const FooterLinks = Styled.div`
