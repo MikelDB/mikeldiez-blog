@@ -10,13 +10,6 @@ install: ## Install dependencies
 	docker-compose run blog rm -rf node_modules
 	docker-compose run blog npm install
 
-up: ## Spin up the project
-	docker-compose up
-
-down: ## Bring down the environment
-	docker-compose down
-	docker stop $(docker ps -aq)
-
 build: ## Spin up building docker image
 	docker-compose build
 	docker-compose run blog rm -rf node_modules
@@ -24,3 +17,14 @@ build: ## Spin up building docker image
 
 enter:
 	docker-compose exec blog /bin/sh
+
+up: ## Spin up the project
+	docker-compose up
+
+down: ## Bring down the environment
+	docker-compose down
+	docker stop $(docker ps -aq)
+
+restart:
+	docker-compose down
+	docker-compose up
