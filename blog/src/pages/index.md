@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Software Engineer
+subheading: With an interest in Computer Vision and Machine Learning
 mainpitch:
   title: Why Kaldi
   description: >
@@ -9,7 +9,7 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-title: Great coffee with a conscience
+title: Software Engineer
 intro:
   blurbs:
     - image: /img/coffee.png
