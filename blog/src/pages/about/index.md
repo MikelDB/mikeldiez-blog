@@ -1,10 +1,8 @@
 ---
 templateKey: about-page
 path: /about
-title: Gatita
+title: About me
 ---
-### Mi gatita
+I should probably introduce myself, right? Well, my name is Mikel Diez Buil I currently work as a Software Engineer although I never studied Software Engineering nor Computer Science. I'm a Telecommunication Technical Engineer, sounds cool right? It sounds fancier than it actually is.
 
-Mi gatita es muy buena y ronronea cuando se le hace mimitos. Se me llena el corazón de amor cuando llego a casa y viene a recibirme corriendo com si hiciese años que no me ve. A veces simplemente me siento a mirarla preguntandome que estará pensando con esas facciones de concentración que asoman en su cara.
-
-No se te ocurra molestarla mientras está haciendo algo o te puedes llevar algún arañazo o un mordisco, que se lo digan a mi brazo.
+I'll continue writing tomorrow, thanks for listening I really appreciate it.
