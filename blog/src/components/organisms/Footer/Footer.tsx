@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Icon from '@components/atoms/Icon'; 
+import { Icon } from '@components/atoms/Icon'; 
 
 import { FooterContainer, LinksContainer, SocialIconsContainer, SocialIcon, FooterLinks } from './styles';
 
