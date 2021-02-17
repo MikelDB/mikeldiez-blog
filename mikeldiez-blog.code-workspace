@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": "blog"
+	}
+],
+	"settings": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"files.exclude": {
+			"**/.cache": true
+		},
+		"search.exclude": {
+			"**/public": true
+		}
+	}
+}

@@ -1,0 +1,43 @@
+{
+  "reactFunctionComponent": {
+    "description": "React Function Component",
+    "prefix": "rfc",
+    "scope": "typescriptreact",
+    "body": [
+      "import React from 'react';",
+      "",
+      "type Props = {};",
+      "",
+      "const ${TM_FILENAME_BASE}: React.FC<Props> = (props: Props) => {",
+      "  const {} = props;",
+      "  return (",
+      "    $0",
+      "  );",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};",
+      ""
+    ]
+  },
+
+  "reactReduxContainer": {
+    "description": "React Redux Connected Component",
+    "prefix": "rrcc",
+    "scope": "typescriptreact",
+    "body": [
+      "import { connect } from 'react-redux';",
+      "import { AppState } from 'state';",
+      "",
+      "import ${0:${TM_FILENAME_BASE}} from './${0:${TM_FILENAME_BASE}}';",
+      "",
+      "export type StateProps = {};",
+      "",
+      "const mapStateToProps = (state: AppState): StateProps => ({});",
+      "",
+      "const mapDispatchToProps = (): {} => ({});",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${0:${TM_FILENAME_BASE}});",
+      ""
+    ]
+  }
+}

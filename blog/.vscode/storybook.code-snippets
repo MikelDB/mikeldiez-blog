@@ -1,0 +1,29 @@
+{
+  "storyBookComponent": {
+    "description": "Storybook Component",
+    "prefix": "stbc",
+    "scope": "typescriptreact",
+    "body": [
+      "import React from 'react';",
+      "import { ThemeProvider } from 'styled-components';",
+      "import { GenericTheme } from '../../src/utils/theme';",
+      "import { ${TM_FILENAME_BASE/(.*)\\..+$/$1/} as ${TM_FILENAME_BASE/(.*)\\..+$/$1/}Component} from '../../src/components';",
+      "import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';",
+      "",
+      "export default {",
+      "  title: 'Atoms/${TM_FILENAME_BASE/(.*)\\..+$/$1/}',",
+      "  component: ${TM_FILENAME_BASE/(.*)\\..+$/$1/}Component,",
+      "  decorators:[withKnobs],",
+      "};",
+      "",
+      "export const ${TM_FILENAME_BASE/(.*)\\..+$/$1/} = () => {",
+      "  return (",
+      "    <ThemeProvider theme={GenericTheme}>",
+      "      <${TM_FILENAME_BASE/(.*)\\..+$/$1/}Component />",
+      "    </ThemeProvider>",
+      "  );",
+      "};",
+      ""
+    ]
+  }
+}

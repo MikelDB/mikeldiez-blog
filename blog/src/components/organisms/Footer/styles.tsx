@@ -1,39 +1,36 @@
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-export const FooterContainer = Styled.footer`
-    background-color: #0e1015;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px 0px 16px;
-` ;
-
-export const LinksContainer = Styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 600px;
+export const FooterContainer = styled.footer`
+  background-color: ${({ theme }) => theme.colors.background_primary};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0px 16px;
 `;
 
-export const FooterLinks = Styled.div`
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
+export const SocialIconsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 16px 0px 8px;
 `;
 
-export const SocialIconsContainer = Styled.div`
-    display: flex;
-    flex-direction: row;
-    margin: 16px 0px 8px;
-`;
+export const SocialIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0px 8px;
 
-export const SocialIcon = Styled.div`
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    margin: 0px 8px;
-    padding-left: 7px;
+  & > svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.primary};
+    fill: #ffffff;
+  }
 `;

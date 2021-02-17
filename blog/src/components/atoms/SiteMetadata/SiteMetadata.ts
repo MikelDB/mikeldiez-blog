@@ -1,8 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 type SiteMetadataInterface = {
-    title: string,
-    description: string,
+  title: string;
+  description: string;
 };
 
 const useSiteMetadata = (): SiteMetadataInterface => {
@@ -17,8 +17,8 @@ const useSiteMetadata = (): SiteMetadataInterface => {
         }
       }
     `
-  )
-  return site.siteMetadata
+  );
+  return site.siteMetadata;
 };
 
 export default useSiteMetadata;
