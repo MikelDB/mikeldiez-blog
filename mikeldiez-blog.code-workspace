@@ -1,9 +1,9 @@
 {
   "folders": [
-	{
-		"path": "blog"
-	}
-],
+		{
+			"path": "blog"
+		}
+	],
 	"settings": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true,
