@@ -6,3 +6,4 @@ blog/.cache/
 blog/public/
 blog/static/admin/*.bundle.*
 blog/yarn-error.log
+.DS_Store

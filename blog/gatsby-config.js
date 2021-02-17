@@ -3,8 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'MikelDB',
-    description:
-      'This is the personal page of Mikel Diez Buil',
+    description: 'This is the personal page of Mikel Diez Buil',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -31,25 +30,56 @@ module.exports = {
         name: 'images',
       },
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /src\/img\/.*\.svg/,
+        },
+      },
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
-      resolve: `gatsby-plugin-typescript`,
+      resolve: 'gatsby-plugin-typescript',
       options: {
         isTSX: true, // defaults to false
-        jsxPragma: `jsx`, // defaults to "React"
+        jsxPragma: 'jsx', // defaults to "React"
         allExtensions: true, // defaults to false
       },
     },
     {
-      resolve: `gatsby-plugin-alias-imports`,
+      resolve: 'gatsby-plugin-prettier-eslint',
+      options: {
+        prettier: {
+          patterns: [
+            // the pattern "**/*.{js,jsx,ts,tsx}" is not used because we will rely on `eslint --fix`
+            '**/*.{css,scss,less}',
+            '**/*.{json,json5}',
+            '**/*.{graphql}',
+            '**/*.{md,mdx}',
+            '**/*.{html}',
+            '**/*.{yaml,yml}',
+          ],
+        },
+        eslint: {
+          patterns: '**/*.{js,jsx,ts,tsx}',
+          customOptions: {
+            fix: true,
+            cache: true,
+          },
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-alias-imports',
       options: {
         alias: {
-          "@components": path.resolve(__dirname, 'src/components'),
-          "@images": path.resolve(__dirname, 'src/img'),
+          '@components': path.resolve(__dirname, 'src/components'),
+          '@images': path.resolve(__dirname, 'src/img'),
         },
-        extensions: []
-      }
+        extensions: [],
+      },
     },
     {
       resolve: 'gatsby-transformer-remark',
@@ -94,4 +124,4 @@ module.exports = {
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
-}
+};

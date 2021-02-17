@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Layout } from '@components/organisms/Layout';
 
 const NotFoundPage = () => (
@@ -8,6 +8,6 @@ const NotFoundPage = () => (
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </div>
   </Layout>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;
