@@ -1,10 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
-import { Icon } from '@components/atoms/Icon';
-
 import { FooterContainer, SocialIconsContainer, SocialIcon } from './styles';
-
 import Github from '@images/github-icon.svg';
 import Stackoverflow from '@images/stackoverflow-icon.svg';
 import Linkedin from '@images/linkedin-icon.svg';

@@ -13,9 +13,9 @@ const StyledLink = Styled((props) => <Link {...props} />)`
   }
 `;
 
-const Logo: React.FC = ({}): React.ReactElement => {
+const Logo: React.FC = (): React.ReactElement => {
   return (
-    <StyledLink to='/' title='Logo'>
+    <StyledLink to="/" title="Logo">
       MikelDB
     </StyledLink>
   );
