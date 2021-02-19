@@ -9,6 +9,11 @@ type ProjectsProps = {
   title: string;
   url: string;
   description: string;
+  tags: [
+    {
+      name: string;
+    }
+  ];
 };
 
 type IndexPageTemplateProps = {
@@ -80,6 +85,9 @@ export const pageQuery = graphql`
           title
           url
           description
+          tags {
+            name
+          }
         }
       }
     }

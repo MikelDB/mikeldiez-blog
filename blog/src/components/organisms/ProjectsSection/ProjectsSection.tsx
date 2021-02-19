@@ -12,6 +12,11 @@ type ProjectsProps = {
   title: string;
   url: string;
   description: string;
+  tags: [
+    {
+      name: string;
+    }
+  ];
 };
 
 type ProjectsSectionProps = {
@@ -36,6 +41,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
               title={project.title}
               url={project.url}
               description={project.description}
+              tags={project.tags}
             />
           ))}
         </ProjectsContainer>

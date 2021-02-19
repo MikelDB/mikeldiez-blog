@@ -14,7 +14,13 @@ const IndexPagePreview: React.FC<IndexPagePreviewProps> = ({ entry }) => {
   if (data) {
     return (
       <ThemeProvider theme={theme}>
-        <IndexPageTemplate title={data.title} subheading={data.subheading} />
+        <IndexPageTemplate
+          title={data.title}
+          subheading={data.subheading}
+          githubtext={data.githubtext}
+          githuburl={data.githuburl}
+          projects={data.projects}
+        />
       </ThemeProvider>
     );
   } else {
