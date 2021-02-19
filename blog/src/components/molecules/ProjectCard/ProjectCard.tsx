@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, StyledAnchor, H3 } from './styles';
+import { Container, StyledAnchor, H3, TextContainer } from './styles';
 
 type ProjectsProps = {
   title: string;
@@ -11,7 +11,7 @@ const ProjectCard: React.FC<ProjectsProps> = ({ title, url, description }) => {
   return (
     <Container>
       <H3>{title}</H3>
-      <div>{description}</div>
+      <TextContainer>{description}</TextContainer>
       <StyledAnchor href={url} target="__blank">
         Code
       </StyledAnchor>

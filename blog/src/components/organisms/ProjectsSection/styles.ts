@@ -31,10 +31,11 @@ export const MoreProjects = styled.a`
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: #fafafa;
+  background-color: #fafafa;
   padding: 12px;
-  margin-top: 12px;
+  margin-top: 16px;
   border-radius: 10px;
-  background-color: #2b5876;
+  color: #2b5876;
+  border: 2px solid #2b5876;
   font-weight: bold;
 `;

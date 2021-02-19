@@ -17,8 +17,8 @@ export const StyledAnchor = styled.a`
   color: #fafafa;
   width: 100%;
   padding: 12px;
-  margin-top: 12px;
-  bottom: 0;
+  margin-bottom: 0;
+  margin-top: auto;
   border-radius: 10px;
   background-color: #2b5876;
   font-weight: bold;
@@ -28,4 +28,8 @@ export const H3 = styled.h3`
   align-self: center;
   margin-top: 4px;
   margin-bottom: 12px;
+`;
+
+export const TextContainer = styled.div`
+  padding-bottom: 24px;
 `;
