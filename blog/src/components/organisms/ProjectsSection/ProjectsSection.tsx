@@ -25,7 +25,6 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
   githubtext,
   githuburl,
 }) => {
-  console.log(projects);
   return (
     <Container>
       <ContentContainer>
