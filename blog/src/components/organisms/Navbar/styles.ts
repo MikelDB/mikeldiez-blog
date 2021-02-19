@@ -9,6 +9,9 @@ export const NavBar = styled.nav`
   background-color: ${({ theme }) => theme.colors.background_primary};
   border-bottom: 1px solid #ffffff;
   top: 0;
+  @media (max-width: 768px) {
+    padding: 4px 4px;
+  }
 `;
 
 export const IconsContainer = styled.div`
