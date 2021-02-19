@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 48%;
-  border: 1px solid black;
+  border: 1px solid rgb(32, 32, 96, 0.5);
   border-radius: 8px;
   padding: 12px;
   border-radius: 8px;
@@ -12,5 +12,5 @@ export const Container = styled.div`
 
 export const StyledAnchor = styled.a`
   text-decoration: none;
-  color: black;
+  color: rgb(32, 32, 96, 0.9);
 `;

@@ -24,9 +24,16 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const H2 = styled.h2`
-  color: ${({ theme }) => theme.colors.primary};
+  color: rgb(32, 32, 96, 0.95);
 `;
 
 export const MoreProjects = styled.a`
-  align-self: flex-start;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  border: 1px solid rgb(32, 32, 96, 0.5);
+  border-radius: 8px;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.primary};
+  margin-top: 16px;
+
+  padding: 8px;
 `;

@@ -29,7 +29,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
   return (
     <Container>
       <ContentContainer>
-        <H2>Projects</H2>
+        <H2>Main projects</H2>
         <ProjectsContainer>
           {projects.map((project) => (
             <ProjectCard
