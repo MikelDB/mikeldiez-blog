@@ -31,9 +31,24 @@ export const StyledAnchor = styled.a`
 export const H3 = styled.h3`
   align-self: center;
   margin-top: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 `;
 
 export const TextContainer = styled.div`
   padding-bottom: 24px;
+`;
+
+export const TagsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+`;
+
+export const Tags = styled.div`
+  background-color: rgba(32, 32, 96, 1);
+  color: #fafafa;
+  margin: 0 2px;
+  padding: 2px 4px;
+  font-size: 11px;
+  border-radius: 4px;
 `;
