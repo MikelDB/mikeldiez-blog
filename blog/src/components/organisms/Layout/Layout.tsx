@@ -47,6 +47,9 @@ export const theme = {
     background_tertiary: '#202080',
     primary: '#602080',
     secondary: '#b030b0',
+    buttonPrimary: '#2b5876',
+    buttonSecondary: '#4e4376',
+    textPrimary: '#152d3d',
   },
 };
 

@@ -35,7 +35,7 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const H2 = styled.h2`
-  color: rgb(32, 32, 96, 0.95);
+  color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
 export const MoreProjects = styled.a`
@@ -46,8 +46,8 @@ export const MoreProjects = styled.a`
   padding: 12px;
   margin-top: 16px;
   border-radius: 10px;
-  color: rgba(32, 32, 96, 1);
-  border: 2px solid rgba(32, 32, 96, 1);
+  color: ${({ theme }) => theme.colors.buttonPrimary};
+  border: 2px solid ${({ theme }) => theme.colors.buttonPrimary};
   font-weight: bold;
   @media (max-width: 768px) {
     width: 90%;
@@ -55,7 +55,7 @@ export const MoreProjects = styled.a`
 
   &:hover {
     color: #fafafa;
-    border: 2px solid rgba(32, 32, 96, 1);
-    background-color: rgba(32, 32, 96, 1);
+    border: 2px solid ${({ theme }) => theme.colors.buttonPrimary};
+    background-color: ${({ theme }) => theme.colors.buttonPrimary};
   }
 `;
