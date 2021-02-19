@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: ${({ theme }) => theme.colors.background_primary};
   display: flex;
   flex-direction: column;
@@ -14,7 +17,7 @@ export const SocialIconsContainer = styled.div`
   margin: 16px 0px 8px;
 `;
 
-export const SocialIcon = styled.div`
+export const SocialIcon = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,5 +35,6 @@ export const SocialIcon = styled.div`
   &:hover {
     background-color: ${({ theme }) => theme.colors.primary};
     fill: #ffffff;
+    cursor: pointer;
   }
 `;
