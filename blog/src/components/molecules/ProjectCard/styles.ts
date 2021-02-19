@@ -8,6 +8,10 @@ export const Container = styled.div`
   padding: 12px;
   background-color: #fafafa;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 48px;
+  }
 `;
 
 export const StyledAnchor = styled.a`

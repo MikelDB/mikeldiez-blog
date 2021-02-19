@@ -6,6 +6,9 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 768px) {
+    padding: 8px;
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -14,6 +17,9 @@ export const ContentContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 export const ProjectsContainer = styled.div`
@@ -21,6 +27,11 @@ export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-top: 0px;
+  }
 `;
 
 export const H2 = styled.h2`
@@ -38,4 +49,7 @@ export const MoreProjects = styled.a`
   color: #2b5876;
   border: 2px solid #2b5876;
   font-weight: bold;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
