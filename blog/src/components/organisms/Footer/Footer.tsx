@@ -8,13 +8,13 @@ const Footer: React.FC = (): React.ReactElement => {
   return (
     <FooterContainer>
       <SocialIconsContainer>
-        <SocialIcon>
+        <SocialIcon href="//www.github.com/mikeldb">
           <Github />
         </SocialIcon>
-        <SocialIcon>
+        <SocialIcon href="//stackoverflow.com/users/4769750/mikel-d%c3%adez-buil">
           <Stackoverflow />
         </SocialIcon>
-        <SocialIcon>
+        <SocialIcon href="https://www.linkedin.com/in/mikeldiezb/">
           <Linkedin />
         </SocialIcon>
       </SocialIconsContainer>

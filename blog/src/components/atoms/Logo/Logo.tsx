@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import Styled from 'styled-components';
 
 const StyledLink = Styled((props) => <Link {...props} />)`
+  text-decoration: none;
   color: #ffffff;
   font-weight: bold;
   font-size: 24px;

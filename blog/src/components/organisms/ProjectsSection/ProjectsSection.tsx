@@ -1,14 +1,48 @@
 import React from 'react';
-import { Container, ContentContainer } from './styles';
+import {
+  Container,
+  ContentContainer,
+  ProjectsContainer,
+  H2,
+  MoreProjects,
+} from './styles';
+import { ProjectCard } from '@components';
 
-const ProjectsSection: React.FC = () => {
+type ProjectsProps = {
+  title: string;
+  url: string;
+  description: string;
+};
+
+type ProjectsSectionProps = {
+  projects: ProjectsProps[];
+  githuburl: string;
+  githubtext: string;
+};
+
+const ProjectsSection: React.FC<ProjectsSectionProps> = ({
+  projects,
+  githubtext,
+  githuburl,
+}) => {
+  console.log(projects);
   return (
     <Container>
       <ContentContainer>
-        <h3>Projects</h3>
-        <a href="https://www.github.com/mikeldb">
-          You can check my other projects on GitHub
-        </a>
+        <H2>Main projects</H2>
+        <ProjectsContainer>
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.title}
+              title={project.title}
+              url={project.url}
+              description={project.description}
+            />
+          ))}
+        </ProjectsContainer>
+        <MoreProjects href={githuburl} target="__blank">
+          {githubtext}
+        </MoreProjects>
       </ContentContainer>
     </Container>
   );

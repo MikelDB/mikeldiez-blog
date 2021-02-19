@@ -2,10 +2,43 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Footer } from '@components/organisms/Footer';
 import { Navbar } from '@components/organisms/Navbar';
-import '../../all.sass';
 import { useSiteMetadata } from '@components/atoms/SiteMetadata';
 import { withPrefix } from 'gatsby';
 import { ThemeProvider } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+
+  #___gatsby {
+    min-height: 100vh;
+  }
+
+  #gatsby-focus-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+`;
 
 export const theme = {
   colors: {
@@ -26,6 +59,7 @@ const TemplateWrapper: React.FC<TemplateWrapperProps> = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <>
+        <GlobalStyle />
         <Helmet>
           <html lang="en" />
           <title>{title}</title>
@@ -65,7 +99,7 @@ const TemplateWrapper: React.FC<TemplateWrapperProps> = ({ children }) => {
           />
         </Helmet>
         <Navbar />
-        <div>{children}</div>
+        {children}
         <Footer />
       </>
     </ThemeProvider>

@@ -5,18 +5,34 @@ import { Layout } from '@components/organisms/Layout';
 import { Banner } from '@components/atoms';
 import { ProjectsSection } from '@components/organisms';
 
+type ProjectsProps = {
+  title: string;
+  url: string;
+  description: string;
+};
+
 type IndexPageTemplateProps = {
   title: string;
   subheading: string;
+  projects: ProjectsProps[];
+  githuburl: string;
+  githubtext: string;
 };
 
 export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
   title,
   subheading,
+  projects,
+  githuburl,
+  githubtext,
 }) => (
   <>
     <Banner heading={title} subheading={subheading} />
-    <ProjectsSection />
+    <ProjectsSection
+      projects={projects}
+      githubtext={githubtext}
+      githuburl={githuburl}
+    />
   </>
 );
 
@@ -26,6 +42,9 @@ type ImagePageProps = {
       frontmatter: {
         title: string;
         subheading: string;
+        projects: ProjectsProps[];
+        githuburl: string;
+        githubtext: string;
       };
     };
   };
@@ -39,6 +58,9 @@ const IndexPage: React.FC<ImagePageProps> = ({ data }) => {
       <IndexPageTemplate
         title={frontmatter.title}
         subheading={frontmatter.subheading}
+        projects={frontmatter.projects}
+        githubtext={frontmatter.githubtext}
+        githuburl={frontmatter.githuburl}
       />
     </Layout>
   );
@@ -51,8 +73,14 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        heading
         subheading
+        githuburl
+        githubtext
+        projects {
+          title
+          url
+          description
+        }
       }
     }
   }
