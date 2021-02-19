@@ -28,12 +28,14 @@ export const H2 = styled.h2`
 `;
 
 export const MoreProjects = styled.a`
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-  border: 1px solid rgb(32, 32, 96, 0.5);
-  border-radius: 8px;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.primary};
+  background-color: #fafafa;
+  padding: 12px;
   margin-top: 16px;
-
-  padding: 8px;
+  border-radius: 10px;
+  color: #2b5876;
+  border: 2px solid #2b5876;
+  font-weight: bold;
 `;
