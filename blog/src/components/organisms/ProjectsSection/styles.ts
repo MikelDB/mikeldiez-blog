@@ -46,10 +46,16 @@ export const MoreProjects = styled.a`
   padding: 12px;
   margin-top: 16px;
   border-radius: 10px;
-  color: #2b5876;
-  border: 2px solid #2b5876;
+  color: rgba(32, 32, 96, 1);
+  border: 2px solid rgba(32, 32, 96, 1);
   font-weight: bold;
   @media (max-width: 768px) {
     width: 90%;
+  }
+
+  &:hover {
+    color: #fafafa;
+    border: 2px solid rgba(32, 32, 96, 1);
+    background-color: rgba(32, 32, 96, 1);
   }
 `;

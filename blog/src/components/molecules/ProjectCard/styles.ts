@@ -24,7 +24,7 @@ export const StyledAnchor = styled.a`
   margin-bottom: 0;
   margin-top: auto;
   border-radius: 10px;
-  background-color: #2b5876;
+  background-color: rgba(32, 32, 96, 1);
   font-weight: bold;
 `;
 
