@@ -19,6 +19,11 @@ export const Container = styled.section`
 
   z-index: -1;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+  @media (max-width: 768px) {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    padding: 0 8px;
+  }
 `;
 
 export const TitlesContainer = styled.div`
