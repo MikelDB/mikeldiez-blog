@@ -43,7 +43,7 @@ intro:
     
     aasdasdasdasdasd
 title: Software Engineer
-githubtext: Check more of my projects on my GitHub...
+githubtext: More on GitHub
 githuburl: https://github.com/mikeldb
 main:
   heading: Great coffee with no compromises
@@ -64,23 +64,15 @@ main:
 image: /img/img_20201018_122334.jpg
 projects:
   - title: Image Processor
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+    description: Once finished this intends to be a graphical playground of computer
+      vision algorithms, like some sort of OpenCV frontend interface where one
+      can process an image using different functions to download it afterwards.
     url: https://github.com/MikelDB/image-processor
   - title: 3D stereo reconstruction
     url: https://github.com/RoboticsLabURJC/2017-tfm-mikel-diez
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+    description: An unfinished master thesis that intended to create a 3D
+      reconstruction from stereo images in order to embed it into a USV for
+      location recognition.
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
