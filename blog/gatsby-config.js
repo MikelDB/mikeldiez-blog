@@ -8,6 +8,7 @@ module.exports = {
     description: 'This is the personal page of Mikel Diez Buil',
   },
   plugins: [
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
