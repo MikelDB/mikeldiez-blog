@@ -28,7 +28,6 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: Subheading, name: subheading, widget: string }
-          - { label: Image (Not in use), name: image, widget: image }
           - { label: GitHub Text, name: githubtext, widget: string }
           - { label: GitHub URL, name: githuburl, widget: string }
           - label: Projects
