@@ -1,11 +1,11 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { Footer } from "@components/organisms/Footer";
-import { Navbar } from "@components/organisms/Navbar";
-import { useSiteMetadata } from "@components/atoms/SiteMetadata";
-import { withPrefix } from "gatsby";
-import { ThemeProvider } from "styled-components";
-import { createGlobalStyle } from "styled-components";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Footer } from '@components/organisms/Footer';
+import { Navbar } from '@components/organisms/Navbar';
+import { useSiteMetadata } from '@components/atoms/SiteMetadata';
+import { withPrefix } from 'gatsby';
+import { ThemeProvider } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -42,11 +42,11 @@ const GlobalStyle = createGlobalStyle`
 
 export const theme = {
   colors: {
-    background_primary: "#202040",
-    background_secondary: "#202060",
-    background_tertiary: "#202080",
-    primary: "#602080",
-    secondary: "#b030b0",
+    background_primary: '#202040',
+    background_secondary: '#202060',
+    background_tertiary: '#202080',
+    primary: '#602080',
+    secondary: '#b030b0',
   },
 };
 
@@ -68,24 +68,24 @@ const TemplateWrapper: React.FC<TemplateWrapperProps> = ({ children }) => {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href={`${withPrefix("/")}img/apple-touch-icon.png`}
+            href={`${withPrefix('/')}img/apple-touch-icon.png`}
           />
           <link
             rel="icon"
             type="image/png"
-            href={`${withPrefix("/")}img/favicon-32x32.png`}
+            href={`${withPrefix('/')}img/favicon-32x32.png`}
             sizes="32x32"
           />
           <link
             rel="icon"
             type="image/png"
-            href={`${withPrefix("/")}img/favicon-16x16.png`}
+            href={`${withPrefix('/')}img/favicon-16x16.png`}
             sizes="16x16"
           />
 
           <link
             rel="mask-icon"
-            href={`${withPrefix("/")}img/safari-pinned-tab.svg`}
+            href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
             color="#ff4400"
           />
           <meta name="theme-color" content="#fff" />
@@ -95,7 +95,7 @@ const TemplateWrapper: React.FC<TemplateWrapperProps> = ({ children }) => {
           <meta property="og:url" content="/" />
           <meta
             property="og:image"
-            content={`${withPrefix("/")}img/og-image.jpg`}
+            content={`${withPrefix('/')}img/og-image.jpg`}
           />
         </Helmet>
         <Navbar />

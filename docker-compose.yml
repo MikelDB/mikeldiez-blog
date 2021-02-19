@@ -7,7 +7,7 @@ services:
     command: gatsby develop -H 0.0.0.0
     working_dir: /app/blog
     ports:
-      - "8000:8000"
+      - "8080:8000"
     volumes:
       - "./:/app:delegated"
     env_file:
