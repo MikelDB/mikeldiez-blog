@@ -26,6 +26,8 @@ const GlobalStyle = createGlobalStyle`
 
   #gatsby-focus-wrapper {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
   input[type=number]::-webkit-inner-spin-button, 

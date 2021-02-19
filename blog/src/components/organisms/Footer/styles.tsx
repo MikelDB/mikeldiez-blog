@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-  position: absolute;
-  bottom: 0;
+  margin-bottom: 0;
+  margin-top: auto;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.background_primary};
   display: flex;
