@@ -61,18 +61,27 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-image: /img/img_20201018_122334.jpg
 projects:
   - title: Image Processor
     description: Once finished this intends to be a graphical playground of computer
       vision algorithms, like some sort of OpenCV frontend interface where one
       can process an image using different functions to download it afterwards.
     url: https://github.com/MikelDB/image-processor
+    Tags:
+      - name: Python
+      - name: OpenCV
+      - name: TypeScript
+      - name: React
   - title: 3D stereo reconstruction
     url: https://github.com/RoboticsLabURJC/2017-tfm-mikel-diez
     description: An unfinished master thesis that intended to create a 3D
       reconstruction from stereo images in order to embed it into a USV for
       location recognition.
+    Tags:
+      - name: Python
+      - name: OpenCV
+      - name: Electron
+image: /img/img_20201018_122334.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
