@@ -1,72 +1,72 @@
 /* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/no-var-requires */
-const path = require("path");
+const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: "MikelDB",
-    description: "This is the personal page of Mikel Diez Buil",
+    title: 'MikelDB',
+    description: 'This is the personal page of Mikel Diez Buil',
   },
   plugins: [
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sass",
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        path: path.resolve(__dirname, "static/img"),
-        name: "uploads",
+        path: path.resolve(__dirname, 'static/img'),
+        name: 'uploads',
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        path: path.resolve(__dirname, "src/pages"),
-        name: "pages",
+        path: path.resolve(__dirname, 'src/pages'),
+        name: 'pages',
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        path: path.resolve(__dirname, "src/img"),
-        name: "images",
+        path: path.resolve(__dirname, 'src/img'),
+        name: 'images',
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /src\/img\/.*\.svg/,
         },
       },
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-plugin-typescript",
+      resolve: 'gatsby-plugin-typescript',
       options: {
         isTSX: true, // defaults to false
-        jsxPragma: "jsx", // defaults to "React"
+        jsxPragma: 'jsx', // defaults to "React"
         allExtensions: true, // defaults to false
       },
     },
     {
-      resolve: "gatsby-plugin-prettier-eslint",
+      resolve: 'gatsby-plugin-prettier-eslint',
       options: {
         prettier: {
           patterns: [
             // the pattern "**/*.{js,jsx,ts,tsx}" is not used because we will rely on `eslint --fix`
-            "**/*.{css,scss,less}",
-            "**/*.{json,json5}",
-            "**/*.{graphql}",
-            "**/*.{md,mdx}",
-            "**/*.{html}",
-            "**/*.{yaml,yml}",
+            '**/*.{css,scss,less}',
+            '**/*.{json,json5}',
+            '**/*.{graphql}',
+            '**/*.{md,mdx}',
+            '**/*.{html}',
+            '**/*.{yaml,yml}',
           ],
         },
         eslint: {
-          patterns: "**/*.{js,jsx,ts,tsx}",
+          patterns: '**/*.{js,jsx,ts,tsx}',
           customOptions: {
             fix: true,
             cache: true,
@@ -75,27 +75,27 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-alias-imports",
+      resolve: 'gatsby-plugin-alias-imports',
       options: {
         alias: {
-          "@components": path.resolve(__dirname, "src/components"),
-          "@images": path.resolve(__dirname, "src/img"),
+          '@components': path.resolve(__dirname, 'src/components'),
+          '@images': path.resolve(__dirname, 'src/img'),
         },
         extensions: [],
       },
     },
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-relative-images",
+            resolve: 'gatsby-remark-relative-images',
             options: {
-              name: "uploads",
+              name: 'uploads',
             },
           },
           {
-            resolve: "gatsby-remark-images",
+            resolve: 'gatsby-remark-images',
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
@@ -104,20 +104,20 @@ module.exports = {
             },
           },
           {
-            resolve: "gatsby-remark-copy-linked-files",
+            resolve: 'gatsby-remark-copy-linked-files',
             options: {
-              destinationDir: "static",
+              destinationDir: 'static',
             },
           },
         ],
       },
     },
     {
-      resolve: "gatsby-plugin-netlify-cms",
+      resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.ts`,
       },
     },
-    "gatsby-plugin-netlify", // make sure to keep it last in the array
+    'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 };
