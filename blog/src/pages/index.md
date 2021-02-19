@@ -40,7 +40,7 @@ intro:
         sale. The full price you pay goes to the artist.
   heading: aasdasdasdasdasd
   description: |-
-    
+
     aasdasdasdasdasd
 title: Software Engineer
 githubtext: More on GitHub
@@ -63,11 +63,12 @@ main:
     image: /img/products-grid1.jpg
 projects:
   - title: Image Processor
-    description: Once finished this intends to be a graphical playground of computer
+    description:
+      Once finished this intends to be a graphical playground of computer
       vision algorithms, like some sort of OpenCV frontend interface where one
       can process an image using different functions to download it afterwards.
     url: https://github.com/MikelDB/image-processor
-    Tags:
+    tags:
       - name: Python
       - name: OpenCV
       - name: TypeScript
@@ -77,7 +78,7 @@ projects:
     description: An unfinished master thesis that intended to create a 3D
       reconstruction from stereo images in order to embed it into a USV for
       location recognition.
-    Tags:
+    tags:
       - name: Python
       - name: OpenCV
       - name: Electron
