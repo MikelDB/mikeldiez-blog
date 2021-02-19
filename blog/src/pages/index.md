@@ -1,7 +1,7 @@
 ---
 heading: Software Engineer
 templateKey: index-page
-subheading: With an interest in Computer Vision and Machine Learning
+subheading: Computer Vision and Machine learning enthusiast
 mainpitch:
   title: Why Kaldi
   description: >
@@ -40,7 +40,7 @@ intro:
         sale. The full price you pay goes to the artist.
   heading: aasdasdasdasdasd
   description: |-
-
+    
     aasdasdasdasdasd
 title: Software Engineer
 githubtext: More on GitHub
@@ -63,8 +63,7 @@ main:
     image: /img/products-grid1.jpg
 projects:
   - title: Image Processor
-    description:
-      Once finished this intends to be a graphical playground of computer
+    description: Once finished this intends to be a graphical playground of computer
       vision algorithms, like some sort of OpenCV frontend interface where one
       can process an image using different functions to download it afterwards.
     url: https://github.com/MikelDB/image-processor
