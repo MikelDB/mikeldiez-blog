@@ -91,6 +91,7 @@ projects:
       - name: Netlify
       - name: Storybook
     url: https://www.weeklif.com/
+    isdemo: true
 image: /img/img_20201018_122334.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
