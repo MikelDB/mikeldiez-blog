@@ -12,6 +12,7 @@ type ProjectsProps = {
   title: string;
   url: string;
   description: string;
+  isdemo: boolean;
   tags: [
     {
       name: string;
@@ -23,12 +24,14 @@ type ProjectsSectionProps = {
   projects: ProjectsProps[];
   githuburl: string;
   githubtext: string;
+  isdemo: boolean;
 };
 
 const ProjectsSection: React.FC<ProjectsSectionProps> = ({
   projects,
   githubtext,
   githuburl,
+  isdemo,
 }) => {
   return (
     <Container>
@@ -42,6 +45,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
               url={project.url}
               description={project.description}
               tags={project.tags}
+              isDemo={project.isdemo}
             />
           ))}
         </ProjectsContainer>

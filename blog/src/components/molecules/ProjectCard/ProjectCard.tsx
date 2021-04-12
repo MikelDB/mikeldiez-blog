@@ -12,6 +12,7 @@ type ProjectsProps = {
   title: string;
   url: string;
   description: string;
+  isDemo: boolean;
   tags: [{ name: string }];
 };
 
@@ -20,6 +21,7 @@ const ProjectCard: React.FC<ProjectsProps> = ({
   url,
   description,
   tags,
+  isDemo,
 }) => {
   return (
     <Container>
@@ -31,7 +33,7 @@ const ProjectCard: React.FC<ProjectsProps> = ({
       </TagsContainer>
       <TextContainer>{description}</TextContainer>
       <StyledAnchor href={url} target="__blank">
-        Code
+        {isDemo ? 'Demo' : 'Code'}
       </StyledAnchor>
     </Container>
   );

@@ -8,6 +8,7 @@ import { ProjectsSection } from '@components/organisms';
 type ProjectsProps = {
   title: string;
   url: string;
+  isdemo: boolean;
   description: string;
   tags: [
     {
@@ -22,6 +23,7 @@ type IndexPageTemplateProps = {
   projects: ProjectsProps[];
   githuburl: string;
   githubtext: string;
+  isDemo: boolean;
 };
 
 export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
@@ -30,6 +32,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
   projects,
   githuburl,
   githubtext,
+  isDemo,
 }) => (
   <>
     <Banner heading={title} subheading={subheading} />
@@ -37,6 +40,7 @@ export const IndexPageTemplate: React.FC<IndexPageTemplateProps> = ({
       projects={projects}
       githubtext={githubtext}
       githuburl={githuburl}
+      isdemo={isDemo}
     />
   </>
 );
@@ -50,6 +54,7 @@ type ImagePageProps = {
         projects: ProjectsProps[];
         githuburl: string;
         githubtext: string;
+        isdemo: boolean;
       };
     };
   };
@@ -66,6 +71,7 @@ const IndexPage: React.FC<ImagePageProps> = ({ data }) => {
         projects={frontmatter.projects}
         githubtext={frontmatter.githubtext}
         githuburl={frontmatter.githuburl}
+        isDemo={frontmatter.isdemo}
       />
     </Layout>
   );
@@ -84,6 +90,7 @@ export const pageQuery = graphql`
         projects {
           title
           url
+          isdemo
           description
           tags {
             name
