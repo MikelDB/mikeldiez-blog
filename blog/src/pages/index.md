@@ -81,16 +81,14 @@ projects:
       - name: Python
       - name: OpenCV
       - name: Electron
-  - title: Weeklif.com
-    description: Weeklif is an easy way to manage your weekly meals. Just add the
-      dishes to your dishes library, drag and drop them into the calendar and
-      generate your groceries list.
+  - title: Chesstats
+    description: Chesstats is a chess.com statistics site, just search for a user on
+      a certain month to see the results for each opening.
     tags:
       - name: TypeScript
       - name: Next.js
       - name: Netlify
-      - name: Storybook
-    url: https://www.weeklif.com/
+    url: https://www.chesstats.com/
     isdemo: true
 image: /img/img_20201018_122334.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
